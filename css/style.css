@@ -1,0 +1,182 @@
+/**
+ * Make grid stylesheet
+ *
+ * Author: rhumaric (http://rhumaric.com)
+ *
+ * Colors:
+ * - Dark grey: #293333
+ * - Yellow: #FFDD33
+ * - Light grey: #E6E6E6
+ */
+
+/* Quicksand font */
+@font-face {
+    font-family: 'QuicksandBook';
+    src: url('../fonts/Quicksand_Book-webfont.eot');
+    src: url('../fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Quicksand_Book-webfont.woff') format('woff'),
+         url('../fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+         url('../fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* HTML5 elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+
+*{
+
+  box-sizing: border-box;
+}
+/* Default values */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: #E6E6E6;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #FFDD33;
+  font-family: QuicksandBook, sans-serif;
+}
+
+/* Header */
+.page_header{
+
+  background: #293333;
+  width: 100%;
+}
+
+h1{
+
+  margin: 0;
+}
+
+h1 img{
+
+  display: block;
+}
+
+
+/* Grid settings */
+.grid_settings{
+
+  background: #293333;
+  width: 288px; /* Pixels to match the image width */
+  position: absolute;
+  top:168px; /* Pixels to match the image height */
+  bottom: 0;
+  padding-top: 1.5em;
+}
+
+label{
+
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.3125em;
+  line-height: 1.1429em;
+  padding-left: 1.7143em;
+  position: relative;
+  margin-bottom: 1.1428em;
+}
+
+input{
+
+  background: #FFDD33;
+  color: #293333;
+  border: none;
+  width: 3.6666em;
+  height: 1.0555em;
+  text-align: right;
+  font-size: 1.7143em;
+  line-height: 1.25;
+  padding: 0;
+  display: inline-block;
+  margin: 0.1388em 0;
+}
+
+.unit{
+
+  font-size: 1.7143em;
+  line-height: 1.25;
+  text-align: center;
+  width: 1.1388em;
+}
+
+.download{
+
+  width: 100%;
+  text-align: center;
+  font-size: 2.25em;
+  background: #FFDD33;
+  color: #293333;
+  border: none;
+  padding: 0.3333em .95em;
+  line-height: 1.3333;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* Grid display */
+.grid{
+
+  position: absolute;
+  left: 288px;
+  right: 0;
+  top: 168px;
+  bottom: 0;
+}
+
+.viewport{
+
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+}
+
+/* Small print */
+small{
+
+  color: #FFF;
+}
+
+small a, small a:visited{
+
+  color: #FFDD33;
+  text-decoration: none;
+}

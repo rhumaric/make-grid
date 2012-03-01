@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Make Grid — CSS grid generator</title>
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+  <body>
+    <header class="page_header">
+      <h1><img src="img/make-grid-logo.png" alt="Make Grid"></h1>
+    </header>
+    <div class="content">
+    <form class="grid_settings">
+      <label for="column_width" class="column_width">
+        Column width
+        <input type="number" name="column_width" value="12">
+        <span class="unit">%</span>
+      </label>
+      <label for="gutter_width" class="gutter_width">
+        Gutter width
+        <input type="number" name="gutter_width" value="3">
+        <span class="unit">%</span>
+      </label>
+      <label for="column_number" class="column_number">
+        N° of columns
+        <input type="number" name="column_number" value="3">
+      </label>
+      <button type="submit" class="download" name="download">
+        Download your grid
+      </button>
+      <small>
+        Brought to you by: <a href="http://rhumaric.com">rhumaric, pixel distiller</a>.
+      </small>
+    </form>
+    <div class="grid">
+      <div class="viewport">
+      </div>
+    </div>
+  </div>
+    <script src="js/ender.min.js"></script> 
+  </body>
+</html>
