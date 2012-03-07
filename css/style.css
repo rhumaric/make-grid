@@ -166,7 +166,16 @@ input{
 
   background: #FFF;
   height: 100%;
-  width: 100%;
+  border-right: 10px solid #293333;
+  text-align: center;
+  overflow: hidden;
+}
+
+.column{
+
+  background: #FFDD33;
+  display: inline-block;
+  height: 100%;
 }
 
 /* Small print */
